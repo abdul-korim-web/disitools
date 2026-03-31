@@ -3,7 +3,7 @@ import { CiPlay1 } from "react-icons/ci";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row mt-10  md:justify-around items-center ">
+    <div className="flex flex-col md:flex-row mt-10  md:justify-around items-center md:min-h-screen  ">
       <div className="order-2 mt-10 px-10 md:order-1  ">
         <div className="flex space-x-[3px] items-center bg-[#E1E7FF] max-w-[294px] justify-center rounded-[1000px]  ">
           <img
