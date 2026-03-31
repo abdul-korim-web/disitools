@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProductCard = ({ products }) => {
+const ProductCard = ({ products,addProductToCart }) => {
   return (
     <div className="mt-10 md:mt-10 grid grid-cols-1 md:grid-cols-3  gap-2 px-5 lg:px-20 space-y-4">
       {products?.map((product) => (
@@ -32,8 +32,8 @@ const ProductCard = ({ products }) => {
           </h2>
           <div>
             <ul className="flex flex-col space-y-2 mt-4 ">
-              {product?.features?.map((item) => (
-                <li className="flex items-center  space-x-2 ">
+              {product?.features?.map((item,index) => (
+                <li key={index} className="flex items-center  space-x-2 ">
                   <img
                     className="w-[20px] h-[20px]"
                     src="./images/Check.png"
@@ -46,7 +46,7 @@ const ProductCard = ({ products }) => {
               ))}
             </ul>
           </div>
-          <button className="mt-4 w-[100%] btn py-3 px-4  text-white font-semibold rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
+          <button onClick={()=>addProductToCart(product?.id)} className="mt-4 w-[100%] btn py-3 px-4  text-white font-semibold rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
             Buy Now
           </button>
         </div>

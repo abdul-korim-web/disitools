@@ -6,6 +6,9 @@ import { toast } from "react-toastify";
 const Tools = () => {
   const [selsctedButton, setSelectedButton] = useState("product");
   const [products,setProducts] = useState([])
+  const [cart, setCart] = useState([]);
+ 
+  // fetch all product in json file 
   const getproducts = async () => {
     try {
       const res = await fetch("./data/productData.json");
@@ -15,6 +18,19 @@ const Tools = () => {
       toast.error("product fetch error")
     }
   };
+   const addProductToCart= async(productId)=>{
+    try {
+      const product =  products.find(item=>item?.id ===productId)
+      const isExitProduct =  cart.find(item=>item?.id ===product?.id)
+      if (isExitProduct) {
+        return toast.warning("product is already addded !")
+      }
+      setCart(prev=>[...prev,product])
+     toast.success("successfully product addded")
+    } catch (error) {
+      toast.error(error?.message || error)
+    }
+  }
   useEffect(() => {
     getproducts();
   }, []);
@@ -42,11 +58,11 @@ const Tools = () => {
               onClick={() => setSelectedButton("cart")}
               className={`btn py-3   font-semibold rounded-full ${selsctedButton == "cart" ? "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white" : "text-black"}`}
             >
-              Cart (2)
+              Cart ({cart?.length})
             </button>
           </div>
         </div>
-        {selsctedButton == "cart" ? <Cart /> : <ProductCard products={products} />}
+        {selsctedButton == "cart" ? <Cart cart={cart} setCart={setCart} /> : <ProductCard products={products} addProductToCart={addProductToCart} />}
       </div>
     </>
   );
