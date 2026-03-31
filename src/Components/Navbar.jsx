@@ -65,7 +65,7 @@ const Navbar = () => {
 
           <div className="mt-5 flex flex-col space-y-3">
             <button className="text-left">Login</button>
-            <button className="py-3 text-white font-semibold rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
+            <button className="btn py-3 text-white font-semibold rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
               Get Started
             </button>
           </div>

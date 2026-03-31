@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "title": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "badge": "Best Seller",
+    "image": "https://cdn-icons-png.flaticon.com/512/4712/4712027.png",
+    "features": [
+      "Unlimited AI generations",
+      "SEO optimized content",
+      "Multi-language support"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Design Master",
+    "description": "Create stunning graphics, social media posts, and UI designs effortlessly.",
+    "price": 19,
+    "badge": "Popular",
+    "image": "https://cdn-icons-png.flaticon.com/512/1055/1055687.png",
+    "features": [
+      "Drag & drop editor",
+      "1000+ templates",
+      "Export in HD"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Video Editor Pro",
+    "description": "Edit videos with powerful tools and create professional content easily.",
+    "price": 39,
+    "badge": "New",
+    "image": "https://cdn-icons-png.flaticon.com/512/3039/3039386.png",
+    "features": [
+      "4K export",
+      "Transitions & effects",
+      "Audio editing"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "SEO Booster",
+    "description": "Optimize your website and rank higher on search engines.",
+    "price": 25,
+    "badge": "Best Seller",
+    "image": "https://cdn-icons-png.flaticon.com/512/4248/4248443.png",
+    "features": [
+      "Keyword research",
+      "Site audit",
+      "Backlink tracking"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Social Media Kit",
+    "description": "Manage and grow your social media accounts with smart tools.",
+    "price": 15,
+    "badge": "Trending",
+    "image": "https://cdn-icons-png.flaticon.com/512/733/733547.png",
+    "features": [
+      "Post scheduling",
+      "Analytics dashboard",
+      "Auto posting"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "AI Chat Assistant",
+    "description": "Automate customer support with intelligent AI chatbot.",
+    "price": 35,
+    "badge": "Popular",
+    "image": "https://cdn-icons-png.flaticon.com/512/4712/4712109.png",
+    "features": [
+      "24/7 support",
+      "Smart replies",
+      "Integration API"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Email Marketing Pro",
+    "description": "Create and send powerful email campaigns with ease.",
+    "price": 20,
+    "badge": "New",
+    "image": "https://cdn-icons-png.flaticon.com/512/561/561127.png",
+    "features": [
+      "Email templates",
+      "Automation",
+      "Open tracking"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Analytics Dashboard",
+    "description": "Track your business data and make smart decisions.",
+    "price": 30,
+    "badge": "Best Seller",
+    "image": "https://cdn-icons-png.flaticon.com/512/1828/1828919.png",
+    "features": [
+      "Real-time data",
+      "Custom reports",
+      "Export charts"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Landing Page Builder",
+    "description": "Build high-converting landing pages without coding.",
+    "price": 22,
+    "badge": "Trending",
+    "image": "https://cdn-icons-png.flaticon.com/512/1828/1828640.png",
+    "features": [
+      "Drag & drop builder",
+      "Responsive design",
+      "Fast loading"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Cloud Storage Pro",
+    "description": "Securely store and access your files anytime, anywhere.",
+    "price": 12,
+    "badge": "Popular",
+    "image": "https://cdn-icons-png.flaticon.com/512/4144/4144727.png",
+    "features": [
+      "Unlimited storage",
+      "Secure backup",
+      "File sharing"
+    ]
+  }
+]

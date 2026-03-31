@@ -1,9 +1,23 @@
-import React, { useState } from "react";
-import Cart from './Cart';
-import ProductCard from './ProductCard';
+import React, { useEffect, useState } from "react";
+import Cart from "./Cart";
+import ProductCard from "./ProductCard";
+import { toast } from "react-toastify";
 
 const Tools = () => {
   const [selsctedButton, setSelectedButton] = useState("product");
+  const [products,setProducts] = useState([])
+  const getproducts = async () => {
+    try {
+      const res = await fetch("./data/productData.json");
+      const data = await res.json()
+      setProducts(data)
+    } catch (error) {
+      toast.error("product fetch error")
+    }
+  };
+  useEffect(() => {
+    getproducts();
+  }, []);
   return (
     <>
       <div className="my-10 md:my-20">
@@ -32,7 +46,7 @@ const Tools = () => {
             </button>
           </div>
         </div>
-        {selsctedButton =="cart"? (<Cart/>) :(<ProductCard/>)}
+        {selsctedButton == "cart" ? <Cart /> : <ProductCard products={products} />}
       </div>
     </>
   );
