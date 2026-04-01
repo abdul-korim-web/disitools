@@ -4,6 +4,7 @@ import Calculate from '../Components/Calculate';
 import Tools from '../Components/Tools';
 import Guite from '../Components/Guite';
 import Priceing from './../Components/Priceing';
+import Workflow from '../Components/Workflow';
 
 const HomeLayout = () => {
     return (
@@ -13,6 +14,7 @@ const HomeLayout = () => {
             <Tools/>
             <Guite/>
             <Priceing/>
+            <Workflow/>
         </div>
     );
 }
