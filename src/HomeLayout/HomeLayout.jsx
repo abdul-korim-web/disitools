@@ -3,6 +3,7 @@ import Hero from '../Components/Hero';
 import Calculate from '../Components/Calculate';
 import Tools from '../Components/Tools';
 import Guite from '../Components/Guite';
+import Priceing from './../Components/Priceing';
 
 const HomeLayout = () => {
     return (
@@ -11,6 +12,7 @@ const HomeLayout = () => {
             <Calculate/>
             <Tools/>
             <Guite/>
+            <Priceing/>
         </div>
     );
 }
