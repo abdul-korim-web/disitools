@@ -24,7 +24,7 @@ const Hero = () => {
           Products
         </p>
         <div className=" flex items-center space-x-[16px] mt-3">
-          <button className="py-3 px-4 text-white font-semibold rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
+          <button className="py-3 px-4 text-white font-semibold rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] ransition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-[#5a46ff] hover:to-[#a020ff] cursor-pointer">
             Explore Products
           </button>
           <button className="btn btn-outline text-[#9514FA] rounded-[1000px]"><CiPlay1/> Watch Demo</button>

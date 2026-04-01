@@ -6,7 +6,7 @@ const ProductCard = ({ products,addProductToCart }) => {
       {products?.map((product) => (
         <div
           key={product?.id}
-          className=" w-[100%] mx-auto border border-2 border-[#F2F2F2] rounded-[16px] p-[24px] md:w-[380px]  "
+          className=" w-[100%] mx-auto border border-2 border-[#F2F2F2] rounded-[16px] p-[24px] md:w-[380px] ransition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-[#5a46ff] hover:to-[#a020ff] "
         >
           <div className="flex justify-end">
             <h2 className="w-[100px] bg-[#FEF3C6] text-center rounded-[1000px] py-2 px-3 text-[#BB4D00] font-[500]">

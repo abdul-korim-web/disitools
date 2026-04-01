@@ -61,7 +61,7 @@ const Priceing = () => {
         {priceingData?.map((item) => (
           <div
             key={item?.id}
-            className={`${item?.isMostPopuler ? "bg-gradient-to-r from-[#4F39F6] to-[#9514FA]" :"bg-[#F9FAFC]"} max-w-[300px] md:w-[380px] flex flex-col space-y-4 p-6 border border-2 border-white rounded-2xl mt-10 `}
+            className={`${item?.isMostPopuler ? "bg-gradient-to-r from-[#4F39F6] to-[#9514FA]" :"bg-[#F9FAFC]"} max-w-[300px] md:w-[380px] flex flex-col space-y-4 p-6 border border-2 border-white rounded-2xl mt-10 ransition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-[#5a46ff] hover:to-[#a020ff] cursor-pointer `}
           >
             {item?.isMostPopuler ? (
               <div className="flex justify-center mt-[-45px]">
@@ -82,7 +82,7 @@ const Priceing = () => {
                 <li className="flex space-x-1 items-center" key={feature}> <img  src={`${item?.isMostPopuler ? "./images/CheckWhite.png" :"./images/Check.png"} `} alt="check" /> <span className={` ${item?.isMostPopuler ?"text-white" :"text-[#627382]"} font-medium text-[16px] `}>{feature}</span> </li>
               ))}
             </ul>
-            <button className={` ${item?.isMostPopuler ?"bg-white text-[#9514FA]" :"bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white"} btn mt-6 py-5 px-4 rounded-[100px] font-bold text-[16px]  `}>{item?.buttonName}</button>
+            <button className={` ${item?.isMostPopuler ?"bg-white text-[#9514FA]" :"bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white"} btn mt-6 py-5 px-4 rounded-[100px] font-bold text-[16px] ransition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-[#5a46ff] hover:to-[#a020ff]  `}>{item?.buttonName}</button>
           </div>
         ))}
       </div>

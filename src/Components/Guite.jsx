@@ -35,7 +35,7 @@ const Guite = () => {
         {guiteItems?.map((item) => (
           <div
             key={item?.id}
-            className="bg-white max-w-[300px] flex flex-col space-y-4 p-6 border border-2 border-white"
+            className="bg-white max-w-[300px] flex flex-col space-y-4 p-6 border border-2 border-white ransition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-[#5a46ff] hover:to-[#a020ff] cursor-pointer"
           >
             <div className="flex justify-end">
               <div className="w-[40px] h-[40px] bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white flex items-center justify-center rounded-full ">

@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { CiShoppingCart } from "react-icons/ci";
 import { HiMenu, HiX } from "react-icons/hi";
 
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
 
   const navMenu = [
     { name: "Products", path: "/" },
@@ -16,16 +18,21 @@ const Navbar = () => {
   return (
     <div className="w-full">
       <div className="flex items-center justify-between bg-base-100 shadow-sm px-5 lg:px-20 py-4 lg:py-[26px]">
-        
-
         <div>
-          <img src="./images/DigiTools.png" alt="" className="w-[120px] lg:w-auto" />
+          <img
+            src="./images/DigiTools.png"
+            alt=""
+            className="w-[120px] lg:w-auto"
+          />
         </div>
 
         <div className="hidden lg:flex">
           <ul className="flex space-x-8">
             {navMenu.map((item, index) => (
-              <li key={index} className="text-[#101727] text-[16px] font-semibold">
+              <li
+                key={index}
+                className="text-[#101727] text-[16px] font-semibold"
+              >
                 {item.name}
               </li>
             ))}
@@ -33,22 +40,17 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center space-x-3">
-          <button>
-            <CiShoppingCart className="text-[20px]" />
+          <button  className="cursor-pointer ">
+            <CiShoppingCart className="text-[20px] hover:text-3xl hover:transition-all hover:delay-100" />
           </button>
 
-          <button className="hidden sm:block text-[16px]">
-            Login
-          </button>
+          <button className="hidden sm:block text-[16px]">Login</button>
 
-          <button className="hidden sm:block text-[14px] lg:text-[16px] py-2 lg:py-3 px-3 lg:px-4 text-white capitalize font-semibold rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
+          <button className="cursor-pointer hidden sm:block text-[14px] lg:text-[16px] py-2 lg:py-3 px-3 lg:px-4 text-white capitalize font-semibold rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-[#5a46ff] hover:to-[#a020ff]">
             Get Started
           </button>
 
-          <button
-            className="lg:hidden text-2xl"
-            onClick={() => setOpen(!open)}
-          >
+          <button className="lg:hidden text-2xl" onClick={() => setOpen(!open)}>
             {open ? <HiX /> : <HiMenu />}
           </button>
         </div>
@@ -65,7 +67,7 @@ const Navbar = () => {
 
           <div className="mt-5 flex flex-col space-y-3">
             <button className="text-left">Login</button>
-            <button className="btn py-3 text-white font-semibold rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA]">
+            <button className="btn py-3 text-white font-semibold rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] ransition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-[#5a46ff] hover:to-[#a020ff]">
               Get Started
             </button>
           </div>
