@@ -1,16 +1,59 @@
-# React + Vite
+# 🛍️ Simple Product Showcase (DisiTools)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 Live Site: https://abdul-digitools.netlify.app/  
+🔗 GitHub Repo: https://github.com/abdul-korim-web/disitools 
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Project Overview
 
-## React Compiler
+This is a simple product showcase web application built with modern frontend technologies.  
+Users can view products in a clean and responsive UI. The goal of this project is to practice component-based design and responsive layout.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🛍️ Clean and visually appealing product presentation
+- 📱 Fully responsive (mobile, tablet, desktop)
+- 🎨 Clean and modern UI design
+- ⚡ Fast performance
+- 🧩 Component-based structure (React)
+
+---
+
+## 🛠️ Technologies Used
+
+- JavaScript (ES6)
+- React.js
+- Tailwind CSS
+- DaisyUI
+
+---
+
+## 📦 Dependencies
+
+```bash id="dep123"
+react
+react-dom
+tailwindcss
+daisyui
+```
+## 📜 License & Copyright
+
+This project is **open-source and free to use** under the **MIT License**.  
+
+You can freely:
+- ✅ View, modify, and use the source code  
+- ✅ Distribute or include it in your own projects  
+- ✅ Use it for personal or commercial purposes  
+
+Just make sure to keep the original author credit:
+
+**© 2026 Abdul Korim**
+
+## For collaboration or inquiries, contact:  
+📧 Email: abdulkorimwebdeveloper@gmail.com <br> 
+👉 GitHub: [abdul-korim-web](https://github.com/abdul-korim-web) <br>
+👉 Facebook: [abdul-korim-web](https://www.facebook.com/abdulkorimweb) <br>
+👉 LinkedIn: [abdul-korim-web](linkedin.com/in/abdul-korim-webdeveloper) <br>
